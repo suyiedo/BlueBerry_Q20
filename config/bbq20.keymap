@@ -1,6 +1,7 @@
  /*
  * Copyright (c) 2023 ZitaoTech
- * "BlueBerry" Android Layout by Drexel Macintosh     
+ * "BlueBerry" iOS Layout by Drexel Macintosh
+ * MacOS mod by Su 
  * SPDX-License-Identifier: MIT
  */
 #include <behaviors.dtsi>
@@ -183,7 +184,7 @@
 	      bindings = <&kp>, <&glo>;
 	};
 
-//End Behvaiors here
+//End Behaviors here
     };
 
     keymap {
@@ -212,9 +213,9 @@
 
 		            &kp  TAB			 &sk GLOBE		      &mkp LCLK			&glb ESC H		 &sk LALT
 
-    &mtt LS(Q) Q	&mtt LS(W) W      &mtt LS(E) E	&mtt LS(R) R     &mtt LS(T) T	&mtt LS(Y) Y	&mtt LS(U) U	&mtt LS(I) I	&mtt LS(O) O	     &mtt LS(P) P
-    &mtt LS(A) A	&mtt LS(S) S      &mtt LS(D) D	&mtt LS(F) F     &mtt LS(G) G	&mtt LS(H) H	&mtt LS(J) J	&mtt LS(K) K	&mtt LS(L) L         &kp BSPC
-    &ALTL		&mtt LS(Z) Z      &mtt LS(X) X	&mtt LS(C) C     &mtt LS(V) V	&mtt LS(B) B	&mtt LS(N) N	&mtt LS(M) M	&glb LG(SPACE) N     &kp ENTER
+    &kp Q		&kp W      	  &kp E		&kp R     	&kp T		&kp Y		&kp U		&kp I		&kp O		     &kp P
+    &kp A		&kp S      	  &kp D		&kp F     	&kp G		&kp H		&kp J		&kp K		&kp L         	     &kp BSPC
+    &ALTL		&kp Z      	  &kp X		&kp C	     	&kp V		&kp B		&kp N		&kp M		&kp DOLLAR	     &kp ENTER
 
     		         &SHFT				 &mtt C_EJECT LG(LC(Q))		&kp SPACE		&ECTRL			 &sk LGUI
 
