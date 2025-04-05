@@ -174,7 +174,16 @@
             bindings = <&kp>, <&to>;
         };
 
-	drag: behavior_drag {
+	alt_to: behavior_alt_to {
+            compatible = "zmk,behavior-hold-tap";
+            label = "alt_to";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <300>;
+            bindings = <&kp>, <&to>;
+        };
+
+        drag: behavior_drag {
             compatible = "zmk,behavior-hold-tap";
             label = "drag";
             #binding-cells = <2>;
