@@ -13,8 +13,8 @@
 #include <dt-bindings/zmk/ext_power.h>
  
 #define ALT 1
-#define UPPER 2
-#define MEDIA 3
+#define FUNCTION 2
+#define FLASH 3
 
 // Standard Behavior Configurations:
 
@@ -60,18 +60,18 @@
             bindings = <&sk LSHFT>, <&kp CLCK>;
         };
 
-        MED: tap_dance_3 {
+        FLSH: tap_dance_3 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&to 0>, <&to MEDIA>;
+            bindings = <&to 0>, <&to FLASH>;
         };
 
-        MAN: tap_dance_4 {
+        FUNC: tap_dance_4 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&to 0>, <&to UPPER>;
+            bindings = <&to 0>, <&to FUNCTION>;
         };
 
         EALT: tap_dance_5 {
@@ -92,7 +92,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&to 0>, <&to MEDIA>;
+            bindings = <&to 0>, <&to FLASH>;
         };
 
         CON: tap_dance_8 {
@@ -232,7 +232,7 @@
 
     &mtt TILDE HASH	   	&mtt HOME N1	   &mtt UP	N2	   &mtt PG_UP   N3	   &mtt LBKT LPAR	&mtt RBKT RPAR	   &mtt LT UNDER     &mtt GT MINUS	 &mtt CARET PLUS	&mtt PERCENT AT
     &mtt EQUAL STAR		&mtt LEFT N4	   &mtt DOWN	N5	   &mtt RIGHT	N6	   &mtt BSLH SLASH	&mtt PIPE COLON	   &mtt AMPS SEMI    &mtt APOS APOS	 &mtt DQT DQT     	&mtt DEL BSPC
-    &MAN	      	     	&mtt END N7	   &mtt DOWN	N8	   &mtt PG_DN	N9	   &mtt LBRC QMARK	&mtt RBRC EXCL	   &mtt GRAVE COMMA  &mtt DOT DOT	 &mtt DLLR DLLR 	&kp ENTER
+    &FUNC	      	     	&mtt END N7	   &mtt DOWN	N8	   &mtt PG_DN	N9	   &mtt LBRC QMARK	&mtt RBRC EXCL	   &mtt GRAVE COMMA  &mtt DOT DOT	 &mtt DLLR DLLR 	&kp ENTER
 	
     		         &SHFT				 &hm2 EP_TOG N0 		      &kp SPACE			&sk LCTRL		 &sk LGUI
 
@@ -240,7 +240,7 @@
             >;
         };
 
-        upper_layer {
+        function_layer {
 
             bindings = <        
 
@@ -256,7 +256,7 @@
             >;
         };
 
-        media_layer {
+        flash_layer {
 
             bindings = <        
 
