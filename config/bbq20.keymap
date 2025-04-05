@@ -189,7 +189,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <300>;
-            bindings = <&kp>, <&msk>;
+            bindings = <&kp>, <&mkp>;
         };
 
 	glb: mod_tap_glo {
