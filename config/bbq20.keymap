@@ -1,7 +1,6 @@
  /*
  * Copyright (c) 2023 ZitaoTech
- * "BlueBerry" iOS Layout by Drexel Macintosh
- * MacOS mod by Su 
+ * "BlueBerry" Android Layout by Drexel Macintosh     
  * SPDX-License-Identifier: MIT
  */
 #include <behaviors.dtsi>
@@ -13,8 +12,8 @@
 #include <dt-bindings/zmk/ext_power.h>
  
 #define ALT 1
-#define FUNCTION 2
-#define FLASH 3
+#define UPPER 2
+#define MEDIA 3
 
 // Standard Behavior Configurations:
 
@@ -60,18 +59,18 @@
             bindings = <&sk LSHFT>, <&kp CLCK>;
         };
 
-        FLSH: tap_dance_3 {
+        MED: tap_dance_3 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&to 0>, <&to FLASH>;
+            bindings = <&to 0>, <&to MEDIA>;
         };
 
-        FUNC: tap_dance_4 {
+        MAN: tap_dance_4 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&to 0>, <&to FUNCTION>;
+            bindings = <&to 0>, <&to UPPER>;
         };
 
         EALT: tap_dance_5 {
@@ -92,7 +91,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&to 0>, <&to FLASH>;
+            bindings = <&to 0>, <&to MEDIA>;
         };
 
         CON: tap_dance_8 {
@@ -165,15 +164,6 @@
 	      bindings = <&sk>, <&kp>;
    	 };
 
-	layer_to: behavior_layer_to {
-            compatible = "zmk,behavior-hold-tap";
-            label = "layer_sl";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <300>;
-            bindings = <&kp>, <&to>;
-        };
-
 	alt_to: behavior_alt_to {
             compatible = "zmk,behavior-hold-tap";
             label = "alt_to";
@@ -182,7 +172,6 @@
             tapping-term-ms = <300>;
             bindings = <&kp>, <&to>;
         };
-
 
 	glb: mod_tap_glo {
 	      compatible = "zmk,behavior-hold-tap";
@@ -194,7 +183,7 @@
 	      bindings = <&kp>, <&glo>;
 	};
 
-//End Behaviors here
+//End Behvaiors here
     };
 
     keymap {
@@ -219,15 +208,15 @@
                               \      aA        |       0        |                    SPACE                  |          SYM          |         aA    /
                                 -------------------------------------------------------------------------------------------------------------------
         */
-                 		&mtt  TAB ESC                                                                               	&layer_to GLOBE FUNC
+                 		&none                                                                                	&none
 
-		            &mkp  MCLK			 &mkp LCLK		      &mkp LCLK		&mkp RCLK			 &mkp MB4
+		            &kp  TAB			 &sk GLOBE		      &mkp LCLK			&glb ESC H		 &sk LALT
 
     &kp Q		&kp W      	  &kp E		&kp R     	&kp T		&kp Y		&kp U		&kp I		&kp O		     &kp P
     &kp A		&kp S      	  &kp D		&kp F     	&kp G		&kp H		&kp J		&kp K		&kp L         	     &kp BSPC
     &ALTL		&kp Z      	  &kp X		&kp C	     	&kp V		&kp B		&kp N		&kp M		&kp DOLLAR	     &kp ENTER
 
-    		         &SHFT				 &sk LEFT_CONTROL		&kp SPACE		&sk LEFT_ALT			 &sk LEFT_COMMAND
+    		         &SHFT				 &mtt C_EJECT LG(LC(Q))		&kp SPACE		&ECTRL			 &sk LGUI
 
             >;
         };
@@ -236,42 +225,43 @@
         alt_layer {
 
             bindings = <        
-                 		&mtt  TAB ESC                                                                                	&sk GLOBE
+                		&none                                                                            	 &none
 
-    	         	&kp UP    			 &kp LEFT		      &drag CAPSLOCK LCLK		&kp RIGHT	 		&kp DOWN
+    	         	&kp PG_DN    			 &mtt C_PREV C_VOL_DN		      &kp C_PP			&mtt C_NEXT C_VOL_UP	 &kp PG_UP
 
     &kp HASH	   	&kp N1		   &kp N2	 &kp N3		&kp LPAR	&kp RPAR	&kp UNDER     	&kp MINUS	&kp PLUS		&kp AT
     &kp STAR		&kp N4	   	   &kp N5	 &kp N6	 	&kp SLASH	&kp COLON	&kp SEMI	&kp APOS	&kp DQT     		&kp BSPC
-    &FUNC	      	&kp N7		   &kp N8	 &kp N9	   	&kp QMARK	&kp EXCL	&kp COMMA 	&kp DOT		&kp DOLLAR	 	&kp ENTER
-	
-    		         &SHFT				 &kp N0				&kp SPACE		&sk LEFT_ALT			 &sk LEFT_COMMAND
+    &MAN	      	&kp N7		   &kp N8	 &kp N9	   	&kp QMARK	&kp EXCL	&kp COMMA 	&kp DOT		&kp DOLLAR	 	&kp ENTER
+		
+    		         &SHFT				 &hm2 EP_TOG N0 		      &kp SPACE			&sk LCTRL		 &sk LGUI
 
 
             >;
         };
 
-        function_layer {
+        upper_layer {
 
             bindings = <        
 
-		&kp ESC														&to 0
-    		&kp LG(W)		&kp K_CONTEXT_MENU			&ext_power EP_TOG				&kp LG(Z)			&kp LG(Q)  
+		&none													&none
+ 
+    		&mkp LCLK			&mkp RCLK			&mkp MCLK				&mkp MB4				&mkp MB5  
 
-    &none		&kp F1     	&kp F2    	&kp F3	  	&kp F10		&kp F11		&kp F12	    	&kp F13	 	 &kp F14		&kp F15
-    &none	     	&kp F4   	&kp F5      	&kp F6	 	&INSERT		&kp HOME      	&kp PAGE_UP    	&none       	 &none			&kp DELETE
-    &EMU	 	&kp F7     	&kp F8     	&kp F9    	&kp BACKSPACE  	&kp END		&kp PAGE_DOWN  	&none       	 &none		&kp ENTER
+    &kp Q		&kp W     	&kp E    	&kp R	  	  	&kp T			&kp Y		&kp U	    	&kp I	 	 &kp O		&kp P
+    &kp A	     	&kp S   	&kp D      	&kp F	 		&kp G		     	&kp H	      	&kp J       	&kp K       	 &kp L		&kp BSPC
+    &EMU	 	&kp Z     	&kp X     	&kp C    		&kp V	     		&kp B		&kp N        	&kp M       	 &kp DLLR	&kp ENTER
 	
-    		         &SHFT				 &sk LEFT_CONTROL		&kp LG(SPACE)		&sk LEFT_ALT			 &sk LEFT_COMMAND
+    		&SHFT				 &hm2 EP_TOG N0			&kp SPACE				&ECTRL				&sk LGUI
             >;
         };
 
-        flash_layer {
+        media_layer {
 
             bindings = <        
 
-		&bt BT_CLR														&to 0
+		&none													&none
 
-    		&bt BT_SEL 0            	 &bt BT_SEL 1                 &ext_power EP_TOG                &bt BT_SEL 2             &bt BT_SEL 3
+    		&bt BT_SEL 0            	 &bt BT_SEL 1                 &bt BT_CLR                &bt BT_SEL 2             &bt BT_SEL 3
 
     &none       	&none   	&none     	&sys_reset	&ext_power EP_TOG	   &none         	&none	           &none           &none      	   &none
     &none   		&none	  	&none	 	&none     	&none	          	   &none     	 	&none	           &none	   &none      	   &none
