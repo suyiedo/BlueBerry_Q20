@@ -226,15 +226,15 @@
         alt_layer {
 
             bindings = <        
-                		&none                                                                            	 &none
+                 		&kp  TAB                                                                                	&sk GLOBE
 
-    	         	&kp PG_DN    			 &mtt C_PREV C_VOL_DN		      &kp C_PP			&mtt C_NEXT C_VOL_UP	 &kp PG_UP
+    	         	&kp UP    			 &kp LEFT		      &kp CAPSLOCK				&kp RIGHT	 		&kp DOWN
 
-    &mtt TILDE HASH	   	&mtt HOME N1	   &mtt UP	N2	   &mtt PG_UP   N3	   &mtt LBKT LPAR	&mtt RBKT RPAR	   &mtt LT UNDER     &mtt GT MINUS	 &mtt CARET PLUS	&mtt PERCENT AT
-    &mtt EQUAL STAR		&mtt LEFT N4	   &mtt DOWN	N5	   &mtt RIGHT	N6	   &mtt BSLH SLASH	&mtt PIPE COLON	   &mtt AMPS SEMI    &mtt APOS APOS	 &mtt DQT DQT     	&mtt DEL BSPC
-    &FUNC	      	     	&mtt END N7	   &mtt DOWN	N8	   &mtt PG_DN	N9	   &mtt LBRC QMARK	&mtt RBRC EXCL	   &mtt GRAVE COMMA  &mtt DOT DOT	 &mtt DLLR DLLR 	&kp ENTER
+    &kp HASH	   	&kp N1		   &kp N2	 &kp N3		&kp LPAR	&kp RPAR	&kp UNDER     	&kp MINUS	&kp PLUS		&kp AT
+    &kp STAR		&kp N4	   	   &kp N5	 &kp N6	 	&kp SLASH	&kp COLON	&kp SEMI	&kp APOS	&kp DQT     		&kp BSPC
+    &FUNC	      	&kp N7		   &kp N8	 &kp N9	   	&kp QMARK	&kp EXCL	&kp COMMA 	&kp DOT		&kp DOLLAR	 	&kp ENTER
 	
-    		         &SHFT				 &hm2 EP_TOG N0 		      &kp SPACE			&sk LCTRL		 &sk LGUI
+    		         &SHFT				 &kp N0				&kp SPACE		&sk LEFT_ALT			 &sk LEFT_COMMAND
 
 
             >;
