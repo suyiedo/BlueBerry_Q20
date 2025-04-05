@@ -183,14 +183,6 @@
             bindings = <&kp>, <&to>;
         };
 
-        drag: behavior_drag {
-            compatible = "zmk,behavior-hold-tap";
-            label = "drag";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <300>;
-            bindings = <&kp>, <&mkp>;
-        };
 
 	glb: mod_tap_glo {
 	      compatible = "zmk,behavior-hold-tap";
@@ -229,7 +221,7 @@
         */
                  		&mtt  TAB ESC                                                                               	&layer_to GLOBE FUNC
 
-		            &mkp  MCLK			 &mkp LCLK		      &drag CAPSLOCK LCLK		&mkp RCLK			 &mkp MB4
+		            &mkp  MCLK			 &mkp LCLK		      &mkp LCLK		&mkp RCLK			 &mkp MB4
 
     &kp Q		&kp W      	  &kp E		&kp R     	&kp T		&kp Y		&kp U		&kp I		&kp O		     &kp P
     &kp A		&kp S      	  &kp D		&kp F     	&kp G		&kp H		&kp J		&kp K		&kp L         	     &kp BSPC
