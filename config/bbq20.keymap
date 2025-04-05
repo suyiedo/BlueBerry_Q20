@@ -209,15 +209,15 @@
                               \      aA        |       0        |                    SPACE                  |          SYM          |         aA    /
                                 -------------------------------------------------------------------------------------------------------------------
         */
-                 		&none                                                                                	&none
+                 		&kp  TAB                                                                                	&sk GLOBE
 
-		            &kp  TAB			 &sk GLOBE		      &mkp LCLK			&glb ESC H		 &sk LALT
+		            &mkp  MCLK			 &mkp LCLK		      &kp CAPSLOCK			&mkp RCLK			 &mkp MB4
 
     &kp Q		&kp W      	  &kp E		&kp R     	&kp T		&kp Y		&kp U		&kp I		&kp O		     &kp P
     &kp A		&kp S      	  &kp D		&kp F     	&kp G		&kp H		&kp J		&kp K		&kp L         	     &kp BSPC
     &ALTL		&kp Z      	  &kp X		&kp C	     	&kp V		&kp B		&kp N		&kp M		&kp DOLLAR	     &kp ENTER
 
-    		         &SHFT				 &mtt C_EJECT LG(LC(Q))		&kp SPACE		&ECTRL			 &sk LGUI
+    		         &SHFT				 &sk LEFT_CONTROL		&kp SPACE		&sk LEFT_ALT			 &sk LEFT_COMMAND
 
             >;
         };
