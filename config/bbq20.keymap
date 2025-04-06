@@ -56,7 +56,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&sk LSHFT>, <&kp CLCK>;
+            bindings = <&sk LSHFT>, <&caps_word>;
         };
 
         MED: tap_dance_3 {
@@ -208,7 +208,7 @@
                               \      aA        |       0        |                    SPACE                  |          SYM          |         aA    /
                                 -------------------------------------------------------------------------------------------------------------------
         */
-                 		&none                                                                                	&none
+                 		&kp CLCK                                                                                	&kp CLCK
 
 		            &kp  TAB			 &sk GLOBE		      &mkp LCLK			&glb ESC H		 &sk LALT
 
