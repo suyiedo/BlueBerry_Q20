@@ -208,15 +208,15 @@
                               \      aA        |       0        |                    SPACE                  |          SYM          |         aA    /
                                 -------------------------------------------------------------------------------------------------------------------
         */
-                 		&kp TAB                                                                                	&kp CLCK
+                 		&kp CLCK                                                                                	&kp CLCK
 
-		            &mkp  LCLK			 &mkp MCLK		      &mkp LCLK			&mkp RCLK		 &mkp M4
+		            &mkp  LCLK			 &mkp MCLK		      &mkp LCLK			&mkp RCLK		 &sk LALT
 
     &kp Q		&kp W      	  &kp E		&kp R     	&kp T		&kp Y		&kp U		&kp I		&kp O		     &kp P
     &kp A		&kp S      	  &kp D		&kp F     	&kp G		&kp H		&kp J		&kp K		&kp L         	     &kp BSPC
     &ALTL		&kp Z      	  &kp X		&kp C	     	&kp V		&kp B		&kp N		&kp M		&kp DOLLAR	     &kp ENTER
 
-    		         &SHFT				 &ECTRL		&kp SPACE		&EALT			 &sk LGUI
+    		         &SHFT				 &mtt C_EJECT LG(LC(Q))		&kp SPACE		&ECTRL			 &sk LGUI
 
             >;
         };
