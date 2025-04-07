@@ -208,7 +208,7 @@
                               \      aA        |       0        |                    SPACE                  |          SYM          |         aA    /
                                 -------------------------------------------------------------------------------------------------------------------
         */
-                 		&kp CLCK                                                                                	&kp CLCK
+                 		&mtt ESC TAB                                                                                	&kp CLCK
 
 		            &mkp  LCLK			 &mkp MCLK		      &mkp LCLK			&mkp RCLK		 &mkp MB4
 
