@@ -210,13 +210,13 @@
         */
                  		&mtt ESC TAB                                                                                	&kp CLCK
 
-		            &mkp  LCLK			 &mkp MCLK		      &mkp LCLK			&mkp RCLK		 &mtt MB5 MB4
+		            &mkp  LCLK			 &mkp MCLK		      &mkp LCLK			&mkp RCLK		 &mkp MB4
 
     &kp Q		&kp W      	  &kp E		&kp R     	&kp T		&kp Y		&kp U		&kp I		&kp O		     &kp P
     &kp A		&kp S      	  &kp D		&kp F     	&kp G		&kp H		&kp J		&kp K		&kp L         	     &kp BSPC
     &ALTL		&kp Z      	  &kp X		&kp C	     	&kp V		&kp B		&kp N		&kp M		&kp DOLLAR	     &kp ENTER
 
-    		         &SHFT				 &sk LALT		&kp SPACE		&ECTRL			 &sk LGUI
+    		         &SHFT				 &sk LCTRL		&kp SPACE		&sk LEFT_ALT			 &sk LGUI
 
             >;
         };
@@ -225,7 +225,7 @@
         alt_layer {
 
             bindings = <        
-                		&none                                                                            	 &none
+                		&mtt ESC TAB                                                                            	 &kp CLCK
 
     	         	&kp PG_DN    			 &mtt C_PREV C_VOL_DN		      &kp C_PP			&mtt C_NEXT C_VOL_UP	 &kp PG_UP
 
@@ -233,7 +233,7 @@
     &kp STAR		&kp N4	   	   &kp N5	 &kp N6	 	&kp SLASH	&kp COLON	&kp SEMI	&kp APOS	&kp DQT     		&kp BSPC
     &MAN	      	&kp N7		   &kp N8	 &kp N9	   	&kp QMARK	&kp EXCL	&kp COMMA 	&kp DOT		&kp DOLLAR	 	&kp ENTER
 		
-    		         &SHFT				 &hm2 EP_TOG N0 		      &kp SPACE			&sk LCTRL		 &sk LGUI
+    		         &SHFT				 &sk LCTRL 		      &kp SPACE			&sk LEFT_ALT		 &sk LGUI
 
 
             >;
