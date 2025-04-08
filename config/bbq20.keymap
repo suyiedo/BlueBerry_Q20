@@ -101,6 +101,13 @@
             bindings = <&to 0>, <&to 0>;
         };
 
+        UPPR: tap_dance_9 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&sl UPPER>, <&to UPPER>;
+        };
+
 // Macro Behaviors
 
     tap: tap {
@@ -194,7 +201,7 @@
         };
 
 
-//End Behvaiors here
+//End Behaviors here
     };
 
     keymap {
@@ -219,7 +226,7 @@
                               \      aA        |       0        |                    SPACE                  |          SYM          |         aA    /
                                 -------------------------------------------------------------------------------------------------------------------
         */
-                 		&ALTL                                                                                	&kp CLCK
+                 		&ALTL                                                                                	&UPPR
 
 		            &mkp  LCLK			 &mkp MCLK		      &mkp LCLK			&mkp RCLK		 &mou MB5 MB4
 
@@ -236,13 +243,13 @@
         alt_layer {
 
             bindings = <        
-                		&MAN                                                                            	 &kp CLCK
+                		&MAN                                                                            	 &UPPR
 
     	         	&kp UP_ARROW    			 &kp LEFT_ARROW		      &kp C_PP			&kp RIGHT_ARROW	      &kp DOWN_ARROW
 
     &kp HASH	   	&kp N1		   &kp N2	 &kp N3		&kp LPAR	&kp RPAR	&kp UNDER     	&kp MINUS	&kp PLUS		&kp AT
     &kp STAR		&kp N4	   	   &kp N5	 &kp N6	 	&kp SLASH	&kp COLON	&kp SEMI	&kp APOS	&kp DQT     		&kp BSPC
-    &MAN	      	&kp N7		   &kp N8	 &kp N9	   	&kp QMARK	&kp EXCL	&kp COMMA 	&kp DOT		&kp DOLLAR	 	&kp ENTER
+    &mtt ESC TAB      	&kp N7		   &kp N8	 &kp N9	   	&kp QMARK	&kp EXCL	&kp COMMA 	&kp DOT		&kp DOLLAR	 	&kp ENTER
 		
     		         &SHFT				 &sk LCTRL 		      &kp SPACE			&sk LEFT_ALT		 &sk LGUI
 
@@ -254,7 +261,7 @@
 
             bindings = <        
 
-		&EMU													&to 0
+		&EMU													&EMU
  
     		&kp CAPS			&sk LCTRL			&none				&sk LEFT_ALT				&sk LGUI  
 
@@ -270,7 +277,7 @@
 
             bindings = <        
 
-		&CON													&none
+		&CON													&CON
 
     		&bt BT_SEL 0            	 &bt BT_SEL 1                 &bt BT_CLR                &bt BT_SEL 2             &bt BT_SEL 3
 
