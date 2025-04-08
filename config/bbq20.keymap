@@ -219,13 +219,13 @@
                               \      aA        |       0        |                    SPACE                  |          SYM          |         aA    /
                                 -------------------------------------------------------------------------------------------------------------------
         */
-                 		&mtt ESC TAB                                                                                	&kp CLCK
+                 		&ALTL                                                                                	&kp CLCK
 
 		            &mkp  LCLK			 &mkp MCLK		      &mkp LCLK			&mkp RCLK		 &mou MB5 MB4
 
     &kp Q		&kp W      	  &kp E		&kp R     	&kp T		&kp Y		&kp U		&kp I		&kp O		     &kp P
     &kp A		&kp S      	  &kp D		&kp F     	&kp G		&kp H		&kp J		&kp K		&kp L         	     &kp BSPC
-    &ALTL		&kp Z      	  &kp X		&kp C	     	&kp V		&kp B		&kp N		&kp M		&kp DOLLAR	     &kp ENTER
+    &mtt ESC TAB	&kp Z      	  &kp X		&kp C	     	&kp V		&kp B		&kp N		&kp M		&kp DOLLAR	     &kp ENTER
 
     		         &SHFT				 &ECTRL		&kp SPACE		&OPTN			 &sk LGUI
 
@@ -236,7 +236,7 @@
         alt_layer {
 
             bindings = <        
-                		&mtt ESC TAB                                                                            	 &kp CLCK
+                		&MAN                                                                            	 &kp CLCK
 
     	         	&kp UP_ARROW    			 &kp LEFT_ARROW		      &kp C_PP			&kp RIGHT_ARROW	      &kp DOWN_ARROW
 
@@ -254,7 +254,7 @@
 
             bindings = <        
 
-		&mtt ESC TAB													&to 0
+		&EMU													&to 0
  
     		&kp CAPS			&sk LCTRL			&none				&sk LEFT_ALT				&sk LGUI  
 
@@ -270,13 +270,13 @@
 
             bindings = <        
 
-		&none													&none
+		&CON													&none
 
     		&bt BT_SEL 0            	 &bt BT_SEL 1                 &bt BT_CLR                &bt BT_SEL 2             &bt BT_SEL 3
 
     &none       	&none   	&none     	&sys_reset	&ext_power EP_TOG	   &none         	&none	           &none           &none      	   &none
     &none   		&none	  	&none	 	&none     	&none	          	   &none     	 	&none	           &none	   &none      	   &none
-    &CON  		&none    	&none    	&none		&bl BL_DEC       	   &bl BL_TOG   	&bl BL_INC         &none           &bootloader     &none
+    &none  		&none    	&none    	&none		&bl BL_DEC       	   &bl BL_TOG   	&bl BL_INC         &none           &bootloader     &none
 
     		&to  0               		 &none	               	      &out OUT_TOG              &none                    &none
 
