@@ -73,7 +73,7 @@
             bindings = <&to 0>, <&to UPPER>;
         };
 
-        EALT: tap_dance_5 {
+        OPTN: tap_dance_5 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
@@ -84,7 +84,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&sk LCTRL>, <&kp LC(SPACE)>;
+            bindings = <&sk LCTRL>, <&kp LCTRL>;
         };
 
         EMU: tap_dance_7 {
@@ -219,7 +219,7 @@
                               \      aA        |       0        |                    SPACE                  |          SYM          |         aA    /
                                 -------------------------------------------------------------------------------------------------------------------
         */
-                 		&mtt ESC TAB                                                                                	&lt 2 CLCK
+                 		&mtt ESC TAB                                                                                	&kp CLCK
 
 		            &mkp  LCLK			 &mkp MCLK		      &mkp LCLK			&mkp RCLK		 &mou MB5 MB4
 
@@ -227,7 +227,7 @@
     &kp A		&kp S      	  &kp D		&kp F     	&kp G		&kp H		&kp J		&kp K		&kp L         	     &kp BSPC
     &ALTL		&kp Z      	  &kp X		&kp C	     	&kp V		&kp B		&kp N		&kp M		&kp DOLLAR	     &kp ENTER
 
-    		         &SHFT				 &sk LCTRL		&kp SPACE		&sk LEFT_ALT			 &sk LGUI
+    		         &SHFT				 &ECTRL		&kp SPACE		&OPTN			 &sk LGUI
 
             >;
         };
