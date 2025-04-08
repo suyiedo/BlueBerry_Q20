@@ -251,7 +251,7 @@
     &none	     	&kp F4   	&kp F5      	&kp F6   		&kp INSERT	     	&kp HOME      	&kp PAGE_UP    	&kp K_CMENU    	 &none		&kp DELETE
     &EMU	 	&kp F7     	&kp F8    	&kp F9    		&kp BSPC     		&kp END		&kp PAGE_DOWN  	&none       	 &kp DLLR	&kp ENTER
 	
-    		&SHFT				 &glo s		&kp LG(SPACE)				&kp GLOBE			&none
+    		&SHFT				 &glo S		&kp LG(SPACE)				&kp GLOBE			&none
             >;
         };
 
