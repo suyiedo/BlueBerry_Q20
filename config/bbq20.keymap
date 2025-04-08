@@ -245,7 +245,7 @@
             bindings = <        
                 		&MAN                                                                            	 &UPPR
 
-    	         	&kp UP_ARROW    			 &kp LEFT_ARROW		      &kp C_PP			&kp RIGHT_ARROW	      &kp DOWN_ARROW
+    	         	&kp UP_ARROW    			 &kp LEFT_ARROW		      &mkp LCLK			&kp RIGHT_ARROW	      &kp DOWN_ARROW
 
     &kp HASH	   	&kp N1		   &kp N2	 &kp N3		&kp LPAR	&kp RPAR	&kp UNDER     	&kp MINUS	&kp PLUS		&kp AT
     &kp STAR		&kp N4	   	   &kp N5	 &kp N6	 	&kp SLASH	&kp COLON	&kp SEMI	&kp APOS	&kp DQT     		&kp BSPC
