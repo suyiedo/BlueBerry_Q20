@@ -278,7 +278,7 @@
 
 		&EMU													&EMU
  
-    		&kp CAPS			&sk LCTRL			&drg_rls				&sk LEFT_ALT				&sk LGUI  
+    		&kp CAPS			&sk LCTRL			&none				&sk LEFT_ALT				&sk LGUI  
 
     &none		&kp F1     	&kp F2          &kp F3	  	  	&kp F10			&kp F11		&kp F12	    	&kp F13	 	 &kp F14	&kp F15
     &none	     	&kp F4   	&kp F5      	&kp F6   		&kp INSERT	     	&kp HOME      	&kp PAGE_UP    	&kp K_CMENU    	 &none		&kp DELETE
