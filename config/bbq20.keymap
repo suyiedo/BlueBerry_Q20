@@ -219,8 +219,9 @@
         mdrag_clk: behavior_mdrag_clk {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "tap-preferred";
             tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
             bindings = <&drag_prs>, <&mkp>;
         };
 
