@@ -210,12 +210,12 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-    	//   hold-while-undecided;
+    	    hold-while-undecided;
             tapping-term-ms = <200>;
-        //  quick-tap-ms = <125>;
+            quick-tap-ms = <125>;
             require-prior-idle-ms = <125>;
             bindings = <&mkp >, <&mkp >;
-        }
+        };
 
 
 
