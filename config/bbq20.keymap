@@ -1,6 +1,7 @@
  /*
  * Copyright (c) 2023 ZitaoTech
- * "BlueBerry" Android Layout by Drexel Macintosh     
+ * "BlueBerry" iOS Layout by Drexel Macintosh 
+ * macOS design by SU
  * SPDX-License-Identifier: MIT
  */
 #include <behaviors.dtsi>
@@ -211,7 +212,7 @@
             flavor = "hold-preferred";
     	    hold-while-undecided;
             tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
+        //  quick-tap-ms = <125>;
             require-prior-idle-ms = <125>;
             bindings = <&mkp >, <&mkp >;
         };
