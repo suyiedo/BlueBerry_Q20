@@ -109,11 +109,6 @@
             bindings = <&sl UPPER>, <&to UPPER>;
         };
 
-        CLK_DRG_SCRL: tap_dance_10 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            bindings = <&mdrag_clk 0 LCLKR>, <&dblclk>, <&kp CAPS>;
-        };
 
 
 // Macro Behaviors
@@ -238,6 +233,11 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <125>;
             bindings = <&drag_prs>, <&mkp>;
+        };
+        CLK_DRG_SCRL: tap_dance_10 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&mdrag_clk 0 LCLKR>, <&dblclk>, <&kp CAPS>;
         };
 
 
