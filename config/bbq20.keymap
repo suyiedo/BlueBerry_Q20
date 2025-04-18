@@ -12,7 +12,7 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/ext_power.h>
  
-#define ALT 1
+#define SYM 1
 #define UPPER 2
 #define MEDIA 3
 
@@ -46,11 +46,11 @@
             bindings = <&mkp LCLK>, <&bt BT_CLR>;
         };
 
-        ALTL: tap_dance_1 {
+        SYMB: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&sl ALT>, <&to ALT>;
+            bindings = <&sl SYM>, <&to SYM>;
         };
 
         SHFT: tap_dance_2 {
@@ -266,7 +266,7 @@
     &kp A		&kp S      	  &kp D		&kp F     	&kp G		&kp H		&kp J		&kp K		&kp L         	     &kp BSPC
     &mtt ESC TAB	&kp Z      	  &kp X		&kp C	     	&kp V		&kp B		&kp N		&kp M		&kp DOLLAR	     &kp ENTER
 
-    		         &SHFT				 &kp GLOBE			&kp SPACE		&ALTL			 &UPPR
+    		         &SHFT				 &kp GLOBE			&kp SPACE		&SYMB			 &UPPR
 
             >;
         };
