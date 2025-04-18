@@ -259,7 +259,7 @@
                               \      aA        |       0        |                    SPACE                  |          SYM          |         aA    /
                                 -------------------------------------------------------------------------------------------------------------------
         */
-                 		&mtt LEFT_ARROW UP_ARROW								&mtt RIGHT_ARROW DOWN_ARROW
+                 		&kp RIGHT_ARROW										&kp LEFT_ARROW 
 
 		            &mkp  LCLK			 &mkp MCLK		      &mdrag_clk 0 LCLK			&mkp RCLK		 &mou MB5 MB4
     &kp Q		&kp W      	  &kp E		&kp R     	&kp T		&kp Y		&kp U		&kp I		&kp O		     &kp P
@@ -275,7 +275,7 @@
         alt_layer {
 
             bindings = <        
-                		&mtt UP_ARROW LEFT_ARROW                                                                            	 &mtt DOWN_ARROW RIGHT_ARROW
+                		&kp DOWN_ARROW                                                                 &kp UP_ARROW
 
     	         	&ECTRL    			 &OPTN		      &mkp LCLK			&sk LGUI	      			&kp ESC
 
