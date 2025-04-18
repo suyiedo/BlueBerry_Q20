@@ -259,14 +259,14 @@
                               \      aA        |       0        |                    SPACE                  |          SYM          |         aA    /
                                 -------------------------------------------------------------------------------------------------------------------
         */
-                 		&ALTL                                                                                	&UPPR
+                 		&mtt LEFT_ARROW UP_ARROW								&mtt RIGHT_ARROW DOWN_ARROW
 
 		            &mkp  LCLK			 &mkp MCLK		      &mdrag_clk 0 LCLK			&mkp RCLK		 &mou MB5 MB4
     &kp Q		&kp W      	  &kp E		&kp R     	&kp T		&kp Y		&kp U		&kp I		&kp O		     &kp P
     &kp A		&kp S      	  &kp D		&kp F     	&kp G		&kp H		&kp J		&kp K		&kp L         	     &kp BSPC
     &mtt ESC TAB	&kp Z      	  &kp X		&kp C	     	&kp V		&kp B		&kp N		&kp M		&kp DOLLAR	     &kp ENTER
 
-    		         &SHFT				 &ECTRL		&kp SPACE		&OPTN			 &sk LGUI
+    		         &SHFT				 &kp GLOBE			&kp SPACE		&ALTL			 &UPPR
 
             >;
         };
@@ -275,15 +275,15 @@
         alt_layer {
 
             bindings = <        
-                		&MAN                                                                            	 &UPPR
+                		&mtt UP_ARROW LEFT_ARROW                                                                            	 &mtt DOWN_ARROW RIGHT_ARROW
 
-    	         	&kp UP_ARROW    			 &kp LEFT_ARROW		      &mkp LCLK			&kp RIGHT_ARROW	      &kp DOWN_ARROW
+    	         	&ECTRL    			 &OPTN		      &mkp LCLK			&sk LGUI	      			&kp ESC
 
     &kp HASH	   	&kp N1		   &kp N2	 &kp N3		&kp LPAR	&kp RPAR	&kp UNDER     	&kp MINUS	&kp PLUS		&kp AT
     &kp STAR		&kp N4	   	   &kp N5	 &kp N6	 	&kp SLASH	&kp COLON	&kp SEMI	&kp APOS	&kp DQT     		&kp BSPC
     &mtt ESC TAB      	&kp N7		   &kp N8	 &kp N9	   	&kp QMARK	&kp EXCL	&kp COMMA 	&kp DOT		&kp DOLLAR	 	&kp ENTER
 		
-    		         &SHFT				 &kp N0 		      &kp SPACE			&sk LEFT_ALT		 &sk LGUI
+    		         &SHFT				 &kp N0 		      &kp SPACE			&MAN		 &UPPR
 
 
             >;
@@ -295,13 +295,13 @@
 
 		&EMU													&EMU
  
-    		&kp CAPS			&sk LCTRL			&drag_rls				&sk LEFT_ALT				&sk LGUI  
+    		&kp CAPS			&sk LCTRL			&drag_rls				&sk LEFT_ALT				&kp ESC  
 
     &none		&kp F1     	&kp F2          &kp F3	  	  	&kp F10			&kp F11		&kp F12	    	&kp F13	 	 &kp F14	&kp F15
     &none	     	&kp F4   	&kp F5      	&kp F6   		&kp INSERT	     	&kp HOME      	&kp PAGE_UP    	&kp K_CMENU    	 &none		&kp DELETE
     &EMU	 	&kp F7     	&kp F8    	&kp F9    		&kp BSPC     		&kp END		&kp PAGE_DOWN  	&none       	 &kp DLLR	&kp ENTER
 	
-    		&SHFT				 &glo S		&kp LG(SPACE)				&kp GLOBE			&none
+    		&SHFT				 &glo S		&kp LG(SPACE)				&EMU			&EMU
             >;
         };
 
@@ -309,7 +309,7 @@
 
             bindings = <        
 
-		&CON													&CON
+		&none													&none
 
     		&bt BT_SEL 0            	 &bt BT_SEL 1                 &bt BT_CLR                &bt BT_SEL 2             &bt BT_SEL 3
 
@@ -317,7 +317,7 @@
     &none   		&none	  	&none	 	&none     	&none	          	   &none     	 	&none	           &none	   &none      	   &none
     &none  		&none    	&none    	&none		&bl BL_DEC       	   &bl BL_TOG   	&bl BL_INC         &none           &bootloader     &none
 
-    		&to  0               		 &none	               	      &out OUT_TOG              &none                    &none
+    		&to  0               		 &none	               	      &out OUT_TOG              &CON                    &CON
 
             >;
         };
