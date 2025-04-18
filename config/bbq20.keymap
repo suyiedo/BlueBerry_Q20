@@ -14,7 +14,7 @@
  
 #define SYM 1
 #define UPPER 2
-#define MEDIA 3
+#define SETTINGS 3
 
 // Standard Behavior Configurations:
 
@@ -60,11 +60,11 @@
             bindings = <&sk LSHFT>, <&caps_word>;
         };
 
-        MED: tap_dance_3 {
+        SETN: tap_dance_3 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&to 0>, <&to MEDIA>;
+            bindings = <&to 0>, <&to SETTINGS>;
         };
 
         MAN: tap_dance_4 {
@@ -92,7 +92,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&to 0>, <&to MEDIA>;
+            bindings = <&to 0>, <&to SETTINGS>;
         };
 
         CON: tap_dance_8 {
@@ -272,7 +272,7 @@
         };
 
 
-        alt_layer {
+        symb_layer {
 
             bindings = <        
                 		&kp DOWN_ARROW                                                                 &kp UP_ARROW
@@ -305,7 +305,7 @@
             >;
         };
 
-        media_layer {
+        settings_layer {
 
             bindings = <        
 
