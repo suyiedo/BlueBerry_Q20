@@ -137,6 +137,14 @@
                 = <&macro_release &mkp LCLK &mo 2>;
         };
 
+	esc_rls: esc_rls {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp ESC>
+		, <&macro_release &mkp LCLK &mo 2>;
+        };
+
 // Hold Tap Behaviors
 
   	mtt: mod_tap_tap {
