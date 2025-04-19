@@ -71,14 +71,14 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp LEFT_ARROW>, <&kp UP_ARROW>;
+            bindings = <&kp LEFT_ARROW>, <&kp UP_ARROW>, <&kp RIGHT_ARROW>, <&kp DOWN_ARROW>;
         };
 
         RIGHTDOWN: tap_dance_5 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp RIGHT_ARROW>, <&kp DOWN_ARROW>;
+            bindings = <&kp RIGHT_ARROW>, <&kp DOWN_ARROW>, <&kp LEFT_ARROW>, <&kp UP_ARROW>;
         };
 
         SYML: tap_dance_6 {
