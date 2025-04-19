@@ -13,7 +13,7 @@
 #include <dt-bindings/zmk/ext_power.h>
  
 #define SYM 1
-#define UPPER 2
+#define DRAG 2
 #define SETTINGS 3
 
 // Standard Behavior Configurations:
@@ -46,7 +46,7 @@
             bindings = <&mkp LCLK>, <&bt BT_CLR>;
         };
 
-        SYMB: tap_dance_1 {
+        SYML: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
@@ -71,7 +71,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&to 0>, <&to UPPER>;
+            bindings = <&to 0>, <&to DRAG>;
         };
 
         OPTN: tap_dance_5 {
@@ -102,11 +102,11 @@
             bindings = <&to 0>, <&to 0>;
         };
 
-        UPPR: tap_dance_9 {
+        DRAGL: tap_dance_9 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&sl UPPER>, <&to UPPER>;
+            bindings = <&sl DRAG>, <&to DRAG>;
         };
 
 // Macro Behaviors
@@ -266,13 +266,13 @@
     &kp A		&kp S      	  &kp D		&kp F     	&kp G		&kp H		&kp J		&kp K		&kp L         	     &kp BSPC
     &mtt ESC TAB	&kp Z      	  &kp X		&kp C	     	&kp V		&kp B		&kp N		&kp M		&kp DOLLAR	     &kp ENTER
 
-    		         &SHFT				 &kp GLOBE			&kp SPACE		&SYMB			 &UPPR
+    		         &SHFT				 &kp GLOBE			&kp SPACE		&SYML			 &none
 
             >;
         };
 
 
-        symb_layer {
+        symbol_layer {
 
             bindings = <        
                 		&kp DOWN_ARROW                                                                 &kp UP_ARROW
@@ -283,13 +283,13 @@
     &kp STAR		&kp N4	   	   &kp N5	 &kp N6	 	&kp SLASH	&kp COLON	&kp SEMI	&kp APOS	&kp DQT     		&kp BSPC
     &mtt ESC TAB      	&kp N7		   &kp N8	 &kp N9	   	&kp QMARK	&kp EXCL	&kp COMMA 	&kp DOT		&kp DOLLAR	 	&kp ENTER
 		
-    		         &SHFT				 &kp N0 		      &kp SPACE			&MAN		 &UPPR
+    		         &SHFT				 &kp N0 		      &kp SPACE			&MAN		 &none
 
 
             >;
         };
 
-        upper_layer {
+        drag_layer {
 
             bindings = <        
 
