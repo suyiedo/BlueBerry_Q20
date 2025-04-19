@@ -71,7 +71,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&sk RMETA>, <&kp RMETA>;
+            bindings = <&sk RGUI>, <&kp RGUI>;
 	// in Karabiner on macOS change right CMD to GLOBE ie Fn
         };
 
@@ -215,7 +215,7 @@
     &kp A		&kp S      	  &kp D		&kp F     	&kp G		&kp H		&kp J		&kp K		&kp L         	     &kp BSPC
     &mtt ESC TAB	&kp Z      	  &kp X		&kp C	     	&kp V		&kp B		&kp N		&kp M		&kp DOLLAR	     &kp ENTER
 
-    		         &SHFT				 &kp RMETA(S) 			&kp SPACE		&SYML				&SETNL
+    		         &SHFT				 &kp RG(S) 			&kp SPACE		&SYML				&SETNL
 
             >;
         };
@@ -226,13 +226,13 @@
             bindings = <        
                 		&LEFTUPRIGHTDOWN                                                                 	&RIGHTDOWNLEFTUP
 
-    	         	&sk RMETA    			 &ECTRL		      	&mkp LCLK			&OPTN	 	     		&COMMD
+    	         	&sk RGUI    			 &ECTRL		      	&mkp LCLK			&OPTN	 	     		&COMMD
 
     &kp HASH	   	&kp N1		   &kp N2	 &kp N3		&kp LPAR	&kp RPAR	&kp UNDER     	&kp MINUS	&kp PLUS	      &kp AT
     &kp STAR		&kp N4	   	   &kp N5	 &kp N6	 	&kp SLASH	&kp COLON	&kp SEMI	&kp APOS	&kp DQT     	      &kp BSPC
     &mtt ESC TAB      	&kp N7		   &kp N8	 &kp N9	   	&kp QMARK	&kp EXCL	&kp COMMA 	&kp DOT		&kp DOLLAR	      &kp ENTER
 		
-    		         &SHFT				 &kp N0 		     	&kp SPACE		&LETTERL		 	&kp RMETA
+    		         &SHFT				 &kp N0 		     	&kp SPACE		&LETTERL		 	&kp RGUI
 
 
             >;
