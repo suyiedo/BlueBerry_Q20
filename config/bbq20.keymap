@@ -227,7 +227,7 @@
     &kp A		&kp S      	  &kp D		&kp F     	&kp G		&kp H		&kp J		&kp K		&kp L         	     &kp BSPC
     &mtt ESC TAB	&kp Z      	  &kp X		&kp C	     	&kp V		&kp B		&kp N		&kp M		&kp DOLLAR	     &kp ENTER
 
-    		         &SHFT				 &kp GLOBE			&kp SPACE		&SYML				&SETNL
+    		         &SHFT				 &kp RMETA			&kp SPACE		&SYML				&SETNL
 
             >;
         };
