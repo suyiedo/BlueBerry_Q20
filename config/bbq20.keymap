@@ -67,40 +67,41 @@
             bindings = <&sk LGUI>, <&kp LGUI>;
         };
 
-        SYML: tap_dance_4 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&sl SYM>, <&to SYM>;
-        };
-
-        SETNL: tap_dance_5 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&to 0>, <&to SETTINGS>;
-        };
-
-        LETTERL: tap_dance_6 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&to 0>, <&to 0>;
-        };
-
-        LEFTUP: tap_dance_7 {
+        LEFTUP: tap_dance_4 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&kp LEFT_ARROW>, <&kp UP_ARROW>;
         };
 
-        RIGHTDOWN: tap_dance_8 {
+        RIGHTDOWN: tap_dance_5 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&kp RIGHT_ARROW>, <&kp DOWN_ARROW>;
         };
+
+        SYML: tap_dance_6 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&sl SYM>, <&to SYM>;
+        };
+
+        SETNL: tap_dance_7 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&to 0>, <&to SETTINGS>;
+        };
+
+        LETTERL: tap_dance_8 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&to 0>, <&to 0>;
+        };
+
 
 // Macro Behaviors
 
@@ -226,7 +227,7 @@
     &kp A		&kp S      	  &kp D		&kp F     	&kp G		&kp H		&kp J		&kp K		&kp L         	     &kp BSPC
     &mtt ESC TAB	&kp Z      	  &kp X		&kp C	     	&kp V		&kp B		&kp N		&kp M		&kp DOLLAR	     &kp ENTER
 
-    		         &SHFT				 &kp GLOBE			&kp SPACE		&SYML				&SETNL
+    		         &SHFT				 &glb GLOBE			&kp SPACE		&SYML				&SETNL
 
             >;
         };
