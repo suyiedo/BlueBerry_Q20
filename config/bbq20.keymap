@@ -67,14 +67,14 @@
             bindings = <&sk LGUI>, <&kp LGUI>;
         };
 
-        LEFTUP: tap_dance_4 {
+        LEFTUPRIGHTDOWN: tap_dance_4 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&kp LEFT_ARROW>, <&kp UP_ARROW>, <&kp RIGHT_ARROW>, <&kp DOWN_ARROW>;
         };
 
-        RIGHTDOWN: tap_dance_5 {
+        RIGHTDOWNLEFTUP: tap_dance_5 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
@@ -219,7 +219,7 @@
                               \      aA        |       0        |                    SPACE                  |          SYM          |         aA    /
                                 -------------------------------------------------------------------------------------------------------------------
         */
-                 		&LEFTUP											&RIGHTDOWN 
+                 		&LEFTUPRIGHTDOWN									&RIGHTDOWNLEFTUP 
 
 		        &mkp  LCLK			&mkp MCLK		&mdrag_clk 0 LCLK		&mkp RCLK		 	&mou MB5 MB4
 
@@ -236,7 +236,7 @@
         symbol_layer {
 
             bindings = <        
-                		&LEFTUP                                                                 		&RIGHTDOWN
+                		&LEFTUPRIGHTDOWN                                                                 	&RIGHTDOWNLEFTUP
 
     	         	&ECTRL    			 &OPTN		      	&mkp LCLK			&COMMD	      			&kp ESC
 
