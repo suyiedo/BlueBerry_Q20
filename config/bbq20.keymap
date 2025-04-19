@@ -214,12 +214,13 @@
         */
                  		&kp RIGHT_ARROW										&kp LEFT_ARROW 
 
-		            &mkp  LCLK			 &mkp MCLK		      &mdrag_clk 0 LCLK			&mkp RCLK		 &mou MB5 MB4
+		        &mkp  LCLK			&mkp MCLK		&mdrag_clk 0 LCLK		&mkp RCLK		 	&mou MB5 MB4
+
     &kp Q		&kp W      	  &kp E		&kp R     	&kp T		&kp Y		&kp U		&kp I		&kp O		     &kp P
     &kp A		&kp S      	  &kp D		&kp F     	&kp G		&kp H		&kp J		&kp K		&kp L         	     &kp BSPC
     &mtt ESC TAB	&kp Z      	  &kp X		&kp C	     	&kp V		&kp B		&kp N		&kp M		&kp DOLLAR	     &kp ENTER
 
-    		         &SHFT				 &kp GLOBE			&kp SPACE		&SYML			 &none
+    		         &SHFT				 &kp GLOBE			&kp SPACE		&SYML				&none
 
             >;
         };
@@ -228,15 +229,15 @@
         symbol_layer {
 
             bindings = <        
-                		&kp DOWN_ARROW                                                                 &kp UP_ARROW
+                		&kp DOWN_ARROW                                                                 		&kp UP_ARROW
 
-    	         	&ECTRL    			 &OPTN		      &mkp LCLK			&sk LGUI	      			&kp ESC
+    	         	&ECTRL    			 &OPTN		      	&mkp LCLK			&sk LGUI	      		&kp ESC
 
-    &kp HASH	   	&kp N1		   &kp N2	 &kp N3		&kp LPAR	&kp RPAR	&kp UNDER     	&kp MINUS	&kp PLUS		&kp AT
-    &kp STAR		&kp N4	   	   &kp N5	 &kp N6	 	&kp SLASH	&kp COLON	&kp SEMI	&kp APOS	&kp DQT     		&kp BSPC
-    &mtt ESC TAB      	&kp N7		   &kp N8	 &kp N9	   	&kp QMARK	&kp EXCL	&kp COMMA 	&kp DOT		&kp DOLLAR	 	&kp ENTER
+    &kp HASH	   	&kp N1		   &kp N2	 &kp N3		&kp LPAR	&kp RPAR	&kp UNDER     	&kp MINUS	&kp PLUS	      &kp AT
+    &kp STAR		&kp N4	   	   &kp N5	 &kp N6	 	&kp SLASH	&kp COLON	&kp SEMI	&kp APOS	&kp DQT     	      &kp BSPC
+    &mtt ESC TAB      	&kp N7		   &kp N8	 &kp N9	   	&kp QMARK	&kp EXCL	&kp COMMA 	&kp DOT		&kp DOLLAR	      &kp ENTER
 		
-    		         &SHFT				 &kp N0 		      &kp SPACE			&EMU		 &none
+    		         &SHFT				 &kp N0 		     	&kp SPACE			&EMU			 &none
 
 
             >;
@@ -246,15 +247,15 @@
 
             bindings = <        
 
-		&EMU													&EMU
+				&esc_rls										&esc_rls
  
-    		&kp CAPS			&sk LCTRL			&drag_rls				&sk LEFT_ALT				&kp ESC  
+    			&esc_rls			 &esc_rls		&drag_rls			&esc_rls			&esc_rls  
 
-    &none		&kp F1     	&kp F2          &kp F3	  	  	&kp F10			&kp F11		&kp F12	    	&kp F13	 	 &kp F14	&kp F15
-    &none	     	&kp F4   	&kp F5      	&kp F6   		&kp INSERT	     	&kp HOME      	&kp PAGE_UP    	&kp K_CMENU    	 &none		&kp DELETE
-    &EMU	 	&kp F7     	&kp F8    	&kp F9    		&kp BSPC     		&kp END		&kp PAGE_DOWN  	&none       	 &kp DLLR	&kp ENTER
+    &esc_rls		&esc_rls     	&esc_rls         &esc_rls  	&esc_rls	&esc_rls	&esc_rls    	&esc_rls 	 &esc_rls	      &esc_rls
+    &esc_rls	     	&esc_rls   	&esc_rls      	 &esc_rls   	&esc_rls	&esc_rls      	&esc_rls    	&esc_rls    	 &esc_rls	      &esc_rls
+    &esc_rls	 	&esc_rls     	&esc_rls    	 &esc_rls    	&esc_rls     	&esc_rls	&esc_rls  	&esc_rls       	 &esc_rls             &esc_rls
 	
-    		&SHFT				 &glo S		&kp LG(SPACE)				&EMU			&EMU
+    			&esc_rls			 &esc_rls			&esc_rls			&esc_rls		 &esc_rls
             >;
         };
 
