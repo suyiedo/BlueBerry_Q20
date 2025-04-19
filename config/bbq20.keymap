@@ -60,27 +60,47 @@
             bindings = <&sk LCTRL>, <&kp LCTRL>;
         };
 
-        SYML: tap_dance_3 {
+        COMMD: tap_dance_3 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&sk LGUI>, <&kp LGUI>;
+        };
+
+        SYML: tap_dance_4 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&sl SYM>, <&to SYM>;
         };
 
-        SETNL: tap_dance_4 {
+        SETNL: tap_dance_5 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&to 0>, <&to SETTINGS>;
         };
 
-        LETTERL: tap_dance_5 {
+        LETTERL: tap_dance_6 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&to 0>, <&to 0>;
         };
 
+        LEFTUP: tap_dance_7 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp LEFT_ARROW>, <&kp UP_ARROW>;
+        };
+
+        RIGHTDOWN: tap_dance_8 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp RIGHT_ARROW>, <&kp DOWN_ARROW>;
+        };
 
 // Macro Behaviors
 
@@ -198,7 +218,7 @@
                               \      aA        |       0        |                    SPACE                  |          SYM          |         aA    /
                                 -------------------------------------------------------------------------------------------------------------------
         */
-                 		&kp RIGHT_ARROW										&kp LEFT_ARROW 
+                 		&LEFTUP											&RIGHTDOWN 
 
 		        &mkp  LCLK			&mkp MCLK		&mdrag_clk 0 LCLK		&mkp RCLK		 	&mou MB5 MB4
 
@@ -217,7 +237,7 @@
             bindings = <        
                 		&kp DOWN_ARROW                                                                 		&kp UP_ARROW
 
-    	         	&ECTRL    			 &OPTN		      	&mkp LCLK			&sk LGUI	      		&kp ESC
+    	         	&ECTRL    			 &OPTN		      	&mkp LCLK			&COMMD	      			&kp ESC
 
     &kp HASH	   	&kp N1		   &kp N2	 &kp N3		&kp LPAR	&kp RPAR	&kp UNDER     	&kp MINUS	&kp PLUS	      &kp AT
     &kp STAR		&kp N4	   	   &kp N5	 &kp N6	 	&kp SLASH	&kp COLON	&kp SEMI	&kp APOS	&kp DQT     	      &kp BSPC
@@ -241,7 +261,7 @@
     &esc_rls	     	&esc_rls   	&esc_rls      	 &esc_rls   	&esc_rls	&esc_rls      	&esc_rls    	&esc_rls    	 &esc_rls	      &esc_rls
     &esc_rls	 	&esc_rls     	&esc_rls    	 &esc_rls    	&esc_rls     	&esc_rls	&esc_rls  	&esc_rls       	 &esc_rls             &esc_rls
 	
-    			&esc_rls			 &esc_rls			&esc_rls			&esc_rls		 &esc_rls
+    			&esc_rls			 &esc_rls			&esc_rls		&esc_rls			&esc_rls
             >;
         };
 
@@ -257,7 +277,7 @@
     &none   		&none	  	&none	 	&none     	&none	          	   &none     	 	&none	           &none	   &none      	   &none
     &none  		&none    	&none    	&none		&bl BL_DEC       	   &bl BL_TOG   	&bl BL_INC         &none           &bootloader     &none
 
-    			&to  0               		 &none	               	     	&out OUT_TOG        		 &LETTERL                &LETTERL
+    			&to  0               		 &none	               	     	&out OUT_TOG        	&LETTERL              		&LETTERL
 
             >;
         };
