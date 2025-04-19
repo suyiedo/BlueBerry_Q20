@@ -235,7 +235,7 @@
         symbol_layer {
 
             bindings = <        
-                		&kp DOWN_ARROW                                                                 		&kp UP_ARROW
+                		&LEFTUP                                                                 		&RIGHTDOWN
 
     	         	&ECTRL    			 &OPTN		      	&mkp LCLK			&COMMD	      			&kp ESC
 
