@@ -39,62 +39,48 @@
 
 // Tap Dance Behaviors
 
-        SYML: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&sl SYM>, <&to SYM>;
-        };
-
-        SHFT: tap_dance_1 {
+        SHFT: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&sk LSHFT>, <&caps_word>;
         };
 
-        SETN: tap_dance_2 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&to 0>, <&to SETTINGS>;
-        };
-
-
-        OPTN: tap_dance_3 {
+        OPTN: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&sk LALT>, <&kp LALT>;
         };
 
-        ECTRL: tap_dance_4 {
+        ECTRL: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&sk LCTRL>, <&kp LCTRL>;
         };
 
-        EMU: tap_dance_5 {
+        SYML: tap_dance_3 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&sl SYM>, <&to SYM>;
+        };
+
+        SETNL: tap_dance_4 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&to 0>, <&to SETTINGS>;
         };
 
-        CON: tap_dance_6 {
+        LETTERL: tap_dance_5 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&to 0>, <&to 0>;
         };
 
-        DRAGL: tap_dance_7 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&sl DRAG>, <&to DRAG>;
-        };
 
 // Macro Behaviors
 
@@ -220,7 +206,7 @@
     &kp A		&kp S      	  &kp D		&kp F     	&kp G		&kp H		&kp J		&kp K		&kp L         	     &kp BSPC
     &mtt ESC TAB	&kp Z      	  &kp X		&kp C	     	&kp V		&kp B		&kp N		&kp M		&kp DOLLAR	     &kp ENTER
 
-    		         &SHFT				 &kp GLOBE			&kp SPACE		&SYML				&none
+    		         &SHFT				 &kp GLOBE			&kp SPACE		&SYML				&SETNL
 
             >;
         };
@@ -237,7 +223,7 @@
     &kp STAR		&kp N4	   	   &kp N5	 &kp N6	 	&kp SLASH	&kp COLON	&kp SEMI	&kp APOS	&kp DQT     	      &kp BSPC
     &mtt ESC TAB      	&kp N7		   &kp N8	 &kp N9	   	&kp QMARK	&kp EXCL	&kp COMMA 	&kp DOT		&kp DOLLAR	      &kp ENTER
 		
-    		         &SHFT				 &kp N0 		     	&kp SPACE			&EMU			 &none
+    		         &SHFT				 &kp N0 		     	&kp SPACE		&LETTERL		 	&SETNL
 
 
             >;
@@ -263,15 +249,15 @@
 
             bindings = <        
 
-		&none													&none
+				&none											&none
 
-    		&bt BT_SEL 0            	 &bt BT_SEL 1                 &bt BT_CLR                &bt BT_SEL 2             &bt BT_SEL 3
+    			&bt BT_SEL 0            	 &bt BT_SEL 1            &bt BT_CLR               	&bt BT_SEL 2             	&bt BT_SEL 3
 
     &none       	&none   	&none     	&sys_reset	&ext_power EP_TOG	   &none         	&none	           &none           &none      	   &none
     &none   		&none	  	&none	 	&none     	&none	          	   &none     	 	&none	           &none	   &none      	   &none
     &none  		&none    	&none    	&none		&bl BL_DEC       	   &bl BL_TOG   	&bl BL_INC         &none           &bootloader     &none
 
-    		&to  0               		 &none	               	      &out OUT_TOG              &CON                    &CON
+    			&to  0               		 &none	               	     	&out OUT_TOG        		 &LETTERL                &LETTERL
 
             >;
         };
